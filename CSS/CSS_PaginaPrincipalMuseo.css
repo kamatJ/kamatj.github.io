@@ -1,0 +1,333 @@
+/* Reset de estilos */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    aspect-ratio: 10/ 16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.slider img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+
+body{
+    background-color: rgb(231, 243, 10);
+    color: rgb(77, 28, 28);
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+    background-color: #ff00cc;
+    /*background-color: #e7e3ed;
+    background-color: #d1c7c7;*/
+    background-color: #acf907;
+    background-color: #eefafddb;
+    background-color: #DFDBE5;
+    background-color: #DFDBE5;
+    background-color: #DFDBE5;
+    background-color: #DFDBE5;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%2396a10a' fill-opacity='0.4' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");}
+
+.menuBoton{
+    cursor: pointer;
+    position: absolute;
+    top: 15px; 
+    right: 30px;
+    z-index: 2px;
+    /*ocultar el elemento */
+    /*display: none;*/
+}
+
+a {
+    color: rgba(40, 113, 69, 0.865);
+    
+}
+
+/* quitar los estilos por defecto */
+
+ul {
+    list-style: none;
+}
+
+.contenidoPrincipal{
+    /* Tamaño de la pagina */
+    width: 90%;
+    /* Centrar los elementos */
+    margin: auto;
+}
+
+/* Estilos de navegacion  */
+.navegacionPrincipal {
+
+    font-size: 18px;
+    /* Permite organizar los elementos */
+    display: flex;
+    /* Sirve para utilizar todo el ancho disponible */
+    justify-content: space-between;
+    /* centrar los elementos */
+    align-items: center;
+    height: 70px;
+    padding: 10px; 
+}
+
+hr {
+    margin: 10px;
+}
+
+.menuBoton{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    /* Ocultar el elemento */
+}
+
+.navlog{
+    width: 60px;
+}
+
+/* formato para navegacion izquierda */
+.navegacionPrincipal ul{
+    display: flex;
+}
+
+.navegacionPrincipal ul li{
+    padding: 10px;
+}
+
+.navegacionPrincipal ul li a{
+    padding: 10px;
+}
+
+.navegacionPrincipal ul li a:hover{
+    border-bottom: 5px solid rgb(45, 221, 203);
+}
+
+.navegacionPrincipal ul.navMenu {
+    flex: 1;
+    margin-left: 10px;
+}
+
+
+.boton{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgba(182, 61, 61, 0.785);
+    color: rgb(12, 44, 150);
+    font-size: 15px;
+    border: 2px solid rgb(81, 116, 211);
+    margin: 10px 0;
+}
+
+.boton:hover{
+    opacity: 0.6;
+}
+
+.muestraEncabezado h2,
+.muestraEncabezado p{
+    margin-bottom: 10px;
+}
+
+/* Imagenes del Tema  */
+.temaImagenes {
+    /* se prepara para una cuadricula */
+    display: grid;
+    /* permite crear columnas */
+    grid-template-columns: repeat(4, 1fr);
+    /* espaciado interno */
+    gap: 100px;
+    margin: 60px 0;
+}
+
+.temaImagenes img{
+    width: 100%;
+    height: 190px;
+}
+
+.temaImagenes h3{
+    font-size: 100%;
+    margin: 10px 0;
+}
+
+/* opcional */
+
+.temaImagenes p{
+    text-align: justify;
+}
+
+.temaImagenes a{
+    padding: 10px 0;
+    color: rgb(43, 81, 154);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.temaImagenes a:hover{
+    text-decoration: underline;
+}
+
+/* opcional */
+
+.temaImagenes p{
+    font-style: italic;
+}
+
+.bannerImagenes1{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    background: url('ojos.jpg')
+    no-repeat center/cover;
+    /* opcional */
+    /* opacity: 0.5; */
+    margin-bottom: 90px;
+}
+
+.bannerImagenes1 .contenido{
+     
+    /* width: 100%;
+    padding: 10px 0 0 30px;
+    /* color:grey; */
+
+    text-align:justify;  
+    width: 1000px;
+    padding: 100px 0 0 515px;
+    color: rgb(255, 0, 0);
+    gap: 100px;
+    margin: 10px 0;
+}
+
+
+.bannerImagenes2 .contenido{
+    text-align: center;
+    display: inline;
+    width: 40%;
+    padding: 10px 0 0 30px;
+    color:rgb(0, 0, 0);
+    gap: 150px;
+    margin: 70px 0;
+}
+
+
+.Social {
+    text-align: center; 
+    display: inline;
+    width: 40%;
+    height: 400px;
+    padding: 10px 0 0 30px;
+    gap: 150px;
+    margin: 70px 0; 
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.Social a{    
+    padding: 10px 0;
+    color: rgba(3, 248, 3, 0.511);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.Social p{
+     font-size: 30px;
+     font-style: courier;
+     font-weight: bold;
+}
+
+.enlace-pie-pagina{
+    background-color: rgb(93, 8, 8);
+    color: rgb(179, 255, 0);
+    font-size: 12px;
+    padding: 35 0;
+}
+
+.contenidoPiePagina{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contenidoPiePagina ul{
+    margin: 0 auto;
+}
+
+.contenidoPiePagina ul li{
+    line-height: 3;
+}
+
+.contenidoPiePagina ul li:hover{
+    text-decoration: underline;
+}
+
+.piePagina{
+    background: rgb(173, 199, 182);
+    color: rgb(60, 51, 14);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+@media (max-width: 900px){
+    /* --4-- */
+    .navegacionPrincipal ul.navMenu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(11, 11, 11);
+        height: 100%;
+        transform: translateX(-20px);
+        opacity: .4;
+    }
+
+    /* --5-- */
+    .navegacionPrincipal ul.navMenu li{
+        padding: 20px;
+        border-bottom: rgb(0, 0, 0) solid 1px;
+        font-size: 15px;
+    }
+
+    /* --0-- */
+        /* prueba */
+    body{
+        background: rgba(137, 94, 94, 0.263);
+    }
+
+        /* --1-- */
+    /* se van a modificar las columnas */
+    .temaImagenes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --2-- */
+    .bannerImagenes1 .contenido,
+    .bannerImagenes2 .contenido{
+        width: 80%;
+    }
+
+    /* --3-- */
+    .enlace-pie-pagina .contenidoPrincipal{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
